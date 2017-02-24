@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Index Page</title>
+	<script src="angular/angular.js"></script>
+	<script src="angular-route/angular-route.js"></script>
+	<script src="assets/app.js"></script>
+	<script src="assets/factories/usersFactory.js"></script>
+	<script src="assets/factories/gamesFactory.js"></script>
+	<script src="assets/factories/questionsFactory.js"></script>
+	<script src="assets/controllers/gameController.js"></script>
+	<script src="assets/controllers/questionController.js"></script>
+	<script src="assets/controllers/userController.js"></script>
+</head>
+<body>
+<div ng-controller="userController">
+	<button><a href="/">Home</a></button>
+	<button><a href="#!/question">Add a Question</a></button>
+	<button ng-click="logout()">logout</button>
+</div>
+<div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div id="container">
+	<div id="playeGame">
+		<button><a href="#!/game">Play!</a></button>
+		<p>click the button to start the trivia game.</p>
+	</div>
+	<div id="games">
+		Search: <input type="text" name="search" ng-model="search">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Score</th>
+					<th>Percentage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="game in games" ng-filter="search">
+					<td ng-bind=""></td>
+					<td ng-bind=""></td>
+					<td ng-bind=""></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
